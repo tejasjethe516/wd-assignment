@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<!-- Combinator selector
+        1 -> descendant Selector ( )
+        2 -> direct child selector (>)
+        3 -> adjacent sibling selector (+)
+        4 -> general sibling selector (~)
+    -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 2px solid black;
+        padding: 20px 0;
+      }
+
+      section {
+        border: 2px solid green;
+      }
+
+       div p {
+        color: red;
+      } 
+
+      ul li { */
+        color: blue;
+      }
+
+      ul li ul li {
+        color: green;
+      } 
+
+      div > p {
+        color: green;
+      } 
+
+      div + p {
+        color: greenyellow;
+      }
+
+      div ~ p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Apple</li>
+      <li>
+        Samsung
+        <ul>
+          <li>Galaxy a122</li>
+          <li>Galaxy a122</li>
+          <li>Galaxy a122</li>
+        </ul>
+      </li>
+      <li>Nokia</li>
+    </ul>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+        praesentium tempore eligendi voluptates labore quasi iure voluptatum id,
+        iste, doloremque alias inventore. Magnam, ipsa sint impedit recusandae
+        quidem sed explicabo.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        molestias aliquam dicta soluta beatae commodi, necessitatibus quo
+        deleniti magnam quas consequuntur. Aperiam ut fugit, at accusamus
+        corporis excepturi ab dicta!
+      </p>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+          eaque consequuntur aliquam fugit modi repudiandae fugiat praesentium
+          cum porro, animi nam ex ipsam accusantium labore inventore, non
+          reiciendis corporis natus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+          aspernatur rem consequatur veniam impedit alias corporis consequuntur
+          cupiditate doloremque eos, fugiat atque temporibus itaque vero
+          molestias repellendus hic architecto inventore!
+        </p>
+      </section>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta sequi,
+        aperiam dolorem magni veritatis illo iusto magnam, officia a eum fugit.
+        Maiores beatae facilis labore provident a. Iste, animi dicta!
+      </p>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est
+      tenetur aliquid corporis officia fuga, expedita esse voluptas enim
+      obcaecati facilis maxime nostrum, ipsa aperiam pariatur doloribus
+      blanditiis. Quisquam, consequatur!
+    </p>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore,
+      aperiam? Et perferendis esse officiis placeat tempora. Non nihil quaerat
+      laudantium assumenda illum numquam mollitia id eius incidunt! Aut,
+      consectetur rem.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti
+      modi fugit nobis id beatae repudiandae. A, velit. Nesciunt omnis esse
+      reprehenderit adipisci at possimus. Accusamus vero nemo provident dolores.
+    </p>
+
+    <h1>Hello World</h1>
+  </body>
+</html>
